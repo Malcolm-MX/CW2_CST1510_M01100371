@@ -6,6 +6,5 @@ def migrate_it_tickets(conn):
 
 def get_all_it_tickets(conn):
     sql = 'SELECT * FROM it_tickets'
-    data = pd.read_sql(sql,conn)
-    conn.close() 
+    data = pd.read_sql(sql,conn) 
     return (data)
